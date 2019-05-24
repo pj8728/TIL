@@ -37,3 +37,10 @@ public class Helloworld{
 [구글](https://google.com/)
 
 [네이버](<https://www.naver.com/>)
+
+
+
+#### git 주요단어
+
+* add / commit / push
+
