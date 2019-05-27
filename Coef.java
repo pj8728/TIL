@@ -1,9 +1,3 @@
-## 다항식 곱셈
-
-* 완성은 못했지만 어느정도 구현함. 마무리만 잘 끝내면 가능할듯
-
-
-  ~~~ java
 package test;
 import java.util.ArrayList;
 class Multiple{
@@ -16,9 +10,9 @@ class Multiple{
 			if(expx[i]==expy[j]) {
 				list.add(coefx[i++]+coefy[j++]);
 			}else if(expx[i]>expy[j]) {
-				list.add(coefy[j++]);
-			}else if(expx[i]<expy[j]) {
 				list.add(coefx[i++]);
+			}else if(expx[i]<expy[j]) {
+				list.add(coefy[j++]);
 			}		
 		}
 			for( ; i<expx.length;i++) {
@@ -27,11 +21,11 @@ class Multiple{
 			for( ; j<expy.length;j++) {
 				list.add(coefy[j]);
 			}		
-		int result[] = new int[list.size()];
-		for(int k=0;k<list.size();k++) {
-			result[k] = list.get(k);
-		}
-		return result;		
+			int result[] = new int[list.size()];
+			for(int k=0;k<list.size();k++) {
+					result[k] = list.get(k);
+			}
+			return result;	
 	}
 	public int[] add2(int[] expx,int[] expy){
 		int i=0;
@@ -42,9 +36,9 @@ class Multiple{
 				list.add(expx[i++]);
 						j++;
 			}else if(expx[i]>expy[j]) {
-				list.add(expy[j++]);
-			}else if(expx[i]<expy[j]) {
 				list.add(expx[i++]);
+			}else if(expx[i]<expy[j]) {
+				list.add(expy[j++]);
 			}		
 		}
 			for( ; i<expx.length;i++) {
@@ -60,7 +54,7 @@ class Multiple{
 		return result;	
 	}
 }
-public class Coef3 {
+public class Coef {
 	public static void main(String[] args) {
 		int[] coefx = {1,1};
 		int[] coefy = {5,-10,5,-10};
@@ -68,14 +62,14 @@ public class Coef3 {
 		int[] expy = {3,2,1,0};
 		int[][] exp = new int[expx.length][expy.length];
 		int[][] coef = new int[coefx.length][coefy.length];
-		for(int i=0;i<coefy.length;i++) {
-			for(int j=0;j<coefx.length;j++) {
-				coef[j][i]=coefx[j]*coefy[i];
+		for(int j=0;j<coefy.length;j++) {
+			for(int i=0;i<coefx.length;i++) {
+				coef[i][j]=coefx[i]*coefy[j];
 			}
 		}
-		for(int i=0;i<expy.length;i++) {
-			for(int j=0;j<expx.length;j++) {
-				exp[j][i]=expx[j]+expy[i];
+		for(int j=0;j<expy.length;j++) {
+			for(int i=0;i<expx.length;i++) {
+				exp[i][j]=expx[i]+expy[j];
 			}
 		}
 		Multiple aa= new Multiple();
@@ -89,14 +83,5 @@ public class Coef3 {
 			System.out.print(semi+" ");
 		}
 		System.out.println();
-		for(int i=0;i<exp[0].length;i++) {
-			System.out.print(exp[0][i]+" ");
-		}
-		System.out.println();
-		for(int i=0;i<exp[1].length;i++) {
-			System.out.print(exp[1][i]+" ");
-		}
 	}
 }
-~~~
-
