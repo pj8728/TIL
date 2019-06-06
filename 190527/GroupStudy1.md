@@ -116,7 +116,7 @@ public class Coef {
   ~~~ java
   package test;
   
-  import java.util.Stack;
+  import java.util.Stack; 
   
   class Sq{
   Sq(){}
