@@ -33,7 +33,7 @@ class LinkedList {
 		}
 	}
 
-	protected void addLast(int val) {
+	protected void addLast(int val) { 
 		LinkedNode Lnode = new LinkedNode(val);
 		if(first==null) {
 			addFirst(val);
