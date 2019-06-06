@@ -107,7 +107,7 @@ public class Sequence {
 		}
 		System.out.println(a);
 		System.out.println(k);
-		System.out.println(result);		
+		System.out.println(result);	 	
 	}
 }
 ~~~
