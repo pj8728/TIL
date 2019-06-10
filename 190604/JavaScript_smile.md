@@ -34,7 +34,7 @@
 		canvas.strokeStyle = "black";
 		canvas.stroke();
 //---------------------------------------------------------------------------
-		canvas.beginPath();
+		canvas.beginPath(); 
 		canvas.arc(300, 150, 75, 0, Math.PI * 2, false);
 		canvas.fillStyle = "#fff4d4";
 		canvas.fill();
