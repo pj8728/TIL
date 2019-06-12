@@ -10,7 +10,7 @@ clearInterval(id)
 
 id = setTimeout(function, 초시간)
 clearTimeout(id)
-
+ 
 alert(), confirm(), prompt(), open()
 
 href - 속성
