@@ -34,7 +34,7 @@
 <title>Insert title here</title>
 <style>
 	h1.gstyle{
-		color : green
+		color : green 
 	}
 	#ystyle{
 		background-color : yellow
