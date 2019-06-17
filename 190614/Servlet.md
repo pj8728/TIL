@@ -33,11 +33,11 @@
      객체 생성후 - init()
      요청을 올 때마다 - service() - doGet(), doPost()
      객체 해제 전 - destory()
-3. 쿼리 문자열 추출 방법
+3. 쿼리 문자열 추출 방법 
    * name=value&name=value&name=value...
    * HttpServletRequest 객체의 getParameter()
      String getParameter("String") : value 값 또는 null 또는 ""
      String[] getParameterValues("String") : value 값들의 배열 또는 null
    * GET 방식의 경우 Query 문자열 추출시 한글이 깨지지 않는다.
      POST 방식의 경우 한글이 깨지는데, 추출하기 전
-         request.setCharacterEncoding("UTF-8") 을 호출한 후에 추출한다.
+          request.setCharacterEncoding("UTF-8") 을 호출한 후에 추출한다.
